@@ -1,0 +1,86 @@
+body{
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #333;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+.banner{
+    height: 200px;
+    width: 100%;
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    position: relative;
+}
+.contact-links{
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+    border-radius: 5px;
+    display: flex;
+    gap: 30px;
+    font-size: 20px;
+    background-color: rgba(0,0,0,0.5);
+    padding: 10px;
+}
+.contact-links>*{
+    transition: all .5s ease-in-out;
+}
+.contact-links>*:hover{
+    transform: rotate(-10deg);
+    color: gray;
+}
+.details{
+    color: #fff;
+    padding: 50px;
+    padding-bottom: 20px;
+    position: relative;
+}
+.person-img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid #ddd;
+    box-shadow: 0 0 10px #000;
+    position: absolute;
+    top: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    object-fit: cover;
+    object-position: 0px -30px;
+}
+.about{
+    max-width: 700px;
+    margin: auto;
+    margin-top: 100px;
+    text-align: center;
+}
+.divisions{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+.division_heading{
+    text-align: center;
+}
+.divisions ul{
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+}
+.divisions li{
+    line-height: 2;
+}
+@media screen and (max-width: 700px) {
+    .divisions{
+        flex-direction: column;
+    }
+    .contact-links{
+        top: 30px;
+        bottom: unset;
+    }
+}
